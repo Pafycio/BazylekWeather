@@ -1,0 +1,10 @@
+-std=c++14
+-Wall
+-I/opt/gcc/x86_64/5.2.0-1/include/c++/5.2.0
+-I/opt/gcc/x86_64/5.2.0-1/include/c++/5.2.0/x86_64-redhat-linux
+-I/opt/gcc/x86_64/5.2.0-1/include/c++/5.2.0/backward
+-I/opt/
+-I/usr/bin
+-I/usr/include
+-I./scr
+-I./../check
