@@ -38,7 +38,7 @@ void emitModulsUpdateRequest(Controller *c)
 {
     if (c)
     {
-        for (unsigned int i = 0; i < c->modulsCount; i++)
+        for (int i = 0; i < c->modulsCount; i++)
         {
             update(c->moduls[i]);
         }
@@ -49,7 +49,7 @@ void updateModulsInfo(Controller *c)
 {
     if (c)
     {
-        for (unsigned int i = 0; i < c->modulsCount; i++)
+        for (int i = 0; i < c->modulsCount; i++)
         {
             update(c->moduls[i]);
         }
@@ -63,14 +63,10 @@ void freeController(Controller *c)
         for (int i = 0; i < c->modulsCount; i++)
         {
             free(c->moduls[i]);
-            c->moduls[i] = NULL;
         }
         free(c->moduls);
         free(c->modulsInfo);
         free(c);
-
-        c->moduls = NULL;
-        c->modulsInfo = NULL;
         c = NULL;
     }
 }
